@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFood</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f0f2e4;
+      color: #333;
+    }
+    header {
+      background-color: #d0d8b0;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      margin-left: 1em;
+      text-decoration: none;
+      background-color: #344e41;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    .section {
+      padding: 2em;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 1.6em;
+      margin-bottom: 1em;
+      color: #344e41;
+    }
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+      background-color: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .highlight {
+      background-color: #a3b18a;
+      color: white;
+      padding: 2em 1em;
+      border-radius: 10px;
+    }
+    .footer {
+      background-color: #344e41;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    .footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    form {
+      background-color: #ffffff;
+      max-width: 400px;
+      margin: 2em auto;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form h2 {
+      margin-bottom: 1em;
+      color: #344e41;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"] {
+      width: 100%;
+      padding: 0.75em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form input[type="submit"] {
+      background-color: #344e41;
+      color: white;
+      border: none;
+      padding: 0.75em;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    .highlight h3, .highlight p, .highlight .section-title {
+  color: #00aa55; /* verde personalizado */
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    .social-icons a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em;
+    }
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .form-container form {
+      flex: 1;
+      min-width: 280px;
+    }
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header h1 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+      nav {
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+      }
+      .columns {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo.png.png" alt="Logo de EcoFood">
+    <h1>EcoFood</h1>
+    <nav>
+      <a href="#login">Iniciar Sesión</a>
+      <a href="#register">Registrarse</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="columns">
+      <div class="column">
+        <h3>¿Quiénes somos?</h3>
+        <p>EcoFood es una organización comprometida con la reducción del desperdicio alimentario mediante iniciativas educativas y tecnológicas. Nuestro diverso equipo de expertos busca empoderar a comunidades para optimizar el uso de alimentos, minimizar residuos y promover un mundo más justo y sostenible.</p>
+      </div>
+      <div class="column">
+        <h3>Nuestra misión</h3>
+        <p>Nuestra misión es sensibilizar y movilizar a comunidades locales y globales sobre la importancia de reducir el desperdicio alimentario proporcionando herramientas prácticas y educativas que fomenten hábitos sostenibles y responsables para mejorar la seguridad alimentaria y proteger el medio ambiente.</p>
+      </div>
+      <div class="column">
+        <h3>Nuestra visión</h3>
+        <p>Nuestra visión es un mundo donde los alimentos se valoren y optimicen en toda la cadena de suministro, desde la producción hasta el consumo, con la mínima pérdida posible y el máximo impacto positivo en el medio ambiente, la economía y la sociedad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight">
+    <h2 class="section-title">¿Qué hacemos?</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>¡Educamos!</h3>
+        <p>Ofrecemos materiales gratuitos y talleres comunitarios para fomentar prácticas de consumo sostenible en alimentos.</p>
+      </div>
+      <div class="column">
+        <h3>¡Conectamos!</h3>
+        <p>Promovemos alianzas entre productores, comerciantes, consumidores y comunidades para reducir excedentes y aprovechar al máximo los alimentos disponibles.</p>
+      </div>
+      <div class="column">
+        <h3>¡Innovamos!</h3>
+        <p>Utilizamos la tecnología para desarrollar soluciones prácticas, como apps móviles, plataformas web y redes comunitarias que reduzcan el desperdicio alimentario.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">¿Sabías que?</h2>
+    <div class="columns">
+      <div class="column">
+        <p>Un tercio de los alimentos producidos globalmente se desperdicia.</p>
+        <p>El desperdicio alimentario genera más emisiones que todos los autos del mundo juntos.</p>
+      </div>
+      <div class="column">
+        <p>Más de 800 millones de personas sufren de inseguridad alimentaria en el mundo.</p>
+        <p>Con solo un 25% del desperdicio se podría alimentar a 870 millones de personas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight">
+    <h2 class="section-title">¿Cómo puedo ayudar?</h2>
+    <ul style="text-align: left; max-width: 600px; margin: auto;">
+      <li>Consume responsablemente. Planifica tus compras y utiliza alimentos de forma eficiente.</li>
+      <li>Apoya iniciativas locales. Compra productos locales y de temporada.</li>
+      <li>Difunde conciencia. Comparte información sobre el impacto del desperdicio alimentario con tu comunidad.</li>
+      <li>Participa. Únete a nuestras campañas y eventos para generar cambios significativos.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">¡¡Contáctanos!!</h2>
+    <p>Dirección: Calle Verde 123, Ciudad Sostenible.</p>
+    <p>Correo electrónico: <a href="mailto:contacto@ecofood.org">contacto@ecofood.org</a></p>
+    <p>Teléfono: +56 9 1234 5678</p>
+  </section>
+
+  <section class="section form-container">
+    <form id="login">
+      <h2>Iniciar Sesión</h2>
+      <input type="text" placeholder="Usuario" required>
+      <input type="password" placeholder="Contraseña" required>
+      <input type="submit" value="Entrar">
+    </form>
+
+    <form id="register">
+      <h2>Registro</h2>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+      <input type="submit" value="Registrarse">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>¡Nuestras redes!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://wa.me/56912345678" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+</body>
+</html>
